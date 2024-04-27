@@ -1,9 +1,9 @@
-% (c)  2020 Jumar Martin <jumar@jumart.in> https://jumart.in
+% (c)  2024 Youwen Wu <youwenw@protonmail.com> https://youwen.dev
 
 %This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sga-bill}[2024-4-26-Constitution]
+\ProvidesClass{constitution}[2024-4-26-Constitution]
 
 % Base Class
 \LoadClass[12pt, onecolumn]{article}
@@ -38,11 +38,11 @@
 
 %Variable Initialization
 \def\sponsor#1{\def\@sponsor{#1}}
-\def\president#1{\def\@president{#1}}
+\def\captain#1{\def\@captain{#1}}
 \def\status#1{\def\@status{#1}}
-\def\speaker#1{\def\@speaker{#1}}
-\def\secretary#1{\def\@secretary{#1}}
+\def\first#1{\def\@first{#1}}
 \def\second#1{\def\@second{#1}}
+\def\third#1{\def\@third{#1}}
 \def\aye#1{\def\@aye{#1}}
 \def\nay#1{\def\@nay{#1}}
 \def\abstain#1{\def\@abstain{#1}}
@@ -83,7 +83,7 @@
 \renewcommand{\maketitle}{
     \begin{center}
         
-        In the Hallowed Halls of Leadership
+        Team 1280
         
         v\@billcode
         
@@ -108,13 +108,13 @@
     \renewcommand{\arraystretch}{1}
     \noindent\begin{tabular}{p{3in}p{3in}}
     \hrulefill & \hrulefill \\
-    Author: \@author & First Attending: \@speaker \\
+    Author: \@author & First Attending: \@first \\
     \hrulefill & \hrulefill \\
-    Sponsor: \@sponsor & Second Attending: \@secretary \\
+    Sponsor: \@sponsor & Second Attending: \@second \\
     \hrulefill & \hrulefill \\
-    Second By: \@second & Vote: Aye Nay Abstain\\
+    Third Attending: \@third & Vote: Aye Nay Abstain\\
     \hrulefill & \hrulefill \\
-    STATUS: \@status & Captain: \@president \\
+    STATUS: \@status & Captain: \@captain \\
     \end{tabular}
 }
 % Gobble Page Number
