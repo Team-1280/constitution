@@ -12,10 +12,10 @@ amended before its formal ratification.
 
 ## How to compile this document
 
-Ensure you have `TeXLive 2023` or an equivalent installed.  
-Clone the repository, then `cd` into it.  
-Run `latexmk`.  
-Check `build/root.pdf` for the output.
+1. Ensure you have `TeXLive 2023` or an equivalent installed.
+2. Clone the repository, then `cd` into it.
+3. Run `latexmk`.
+4. Check `build/root.pdf` for the output.
 
 ## Preamble
 
