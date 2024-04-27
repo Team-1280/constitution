@@ -4,9 +4,18 @@ This is the working copy of Team 1280's constitution. As it stands, this remains
 a missing document. Changes are likely to be proposed and articles will be
 amended before its formal ratification.
 
-This document is being actively written in public, by design. You can review the
-Git logs of this document to track its evolution, and make changes in a similar
-fashion to contributing to open-source software.
+<!-- prettier-ignore -->
+> [!NOTE]
+> This document is being actively written in public, by design. You can review the
+> Git logs of this document to track its evolution, and make changes in a similar
+> fashion to contributing to open-source software.
+
+## How to compile this document
+
+Ensure you have `TeXLive 2023` or an equivalent installed.  
+Clone the repository, then `cd` into it.  
+Run `latexmk`.  
+Check `build/root.pdf` for the output.
 
 ## Preamble
 
